@@ -8,7 +8,7 @@ export default function Shows() {
   }, []);
 
   const fetchShows = async () => {
-    const response = await fetch("http://localhost:8080/shows");
+    const response = await fetch("https://review-app-2zpg.onrender.com/shows");
     const data = await response.json();
     setShows(data);
   };

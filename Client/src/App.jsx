@@ -17,13 +17,13 @@ export default function App() {
   }, []);
 
   async function getActors() {
-    const response = await fetch("http://localhost:8080/actors");
+    const response = await fetch("https://review-app-2zpg.onrender.com/actors");
     const data = await response.json();
     setActors(data);
   }
 
   async function getShows() {
-    const response = await fetch("http://localhost:8080/shows");
+    const response = await fetch("https://review-app-2zpg.onrender.com/shows");
     const data = await response.json();
     setShows(data);
   }

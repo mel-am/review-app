@@ -13,7 +13,7 @@ export default function NewPost() {
 
   function handleSubmit(event) {
     event.preventDefault();
-    fetch("http://localhost:8080/posts", {
+    fetch("https://review-app-2zpg.onrender.com/posts", {
       method: "POST",
       body: JSON.stringify(form),
       headers: {

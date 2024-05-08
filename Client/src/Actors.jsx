@@ -9,7 +9,7 @@ export default function Actors() {
   }, []);
 
   const fetchActors = async () => {
-    const response = await fetch("http://localhost:8080/actors");
+    const response = await fetch("https://review-app-2zpg.onrender.com/actors");
     const data = await response.json();
     setActors(data);
   };

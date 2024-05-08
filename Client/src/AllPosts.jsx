@@ -9,7 +9,7 @@ export default function AllPosts() {
   }, []);
 
   const fetchPosts = async () => {
-    const response = await fetch("http://localhost:8080/posts");
+    const response = await fetch("https://review-app-2zpg.onrender.com/posts");
     const data = await response.json();
     setPosts(data);
   };
