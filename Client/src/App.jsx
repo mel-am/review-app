@@ -31,7 +31,7 @@ export default function App() {
   return (
     <div>
       <h1>TV Review</h1>
-      <h2>Please leave a review for your favourite show and actor</h2>
+      <h2>Please leave a review for your favourite show and actor then view a list of popular TV shows and actors</h2>
       <Router>
         <Navbar />
         <Routes>
